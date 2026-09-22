@@ -1,0 +1,36 @@
+/** find the lcm and hcf of two number
+like 12,15
+    lcm=60;
+    hcf=3;
+    */
+#include <stdio.h>
+int main() {
+    int a,b,rem=0,gcd;
+    printf("enter two value for find lcm and hcf:-");
+    scanf("%d %d",&a,&b);
+
+    if(a>b){
+        int temp=a;
+        a=b;
+        b=temp;
+    }
+    int temp_a=a;
+    int temp_b=b;
+    
+    while(temp_a<temp_b)
+    {
+        if(temp_a==0){
+            gcd=temp_b;
+            break;
+        }
+        rem=temp_b%temp_a;
+        temp_b=temp_a;
+        temp_a=rem;
+    }
+    printf("hcf of this number:-%d",gcd);
+    
+    float lcm=(a*b)/gcd;
+    printf("\n\n LCM of this number  %.2f ",lcm);
+    
+    return 0;
+}
