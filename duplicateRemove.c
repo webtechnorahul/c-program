@@ -23,13 +23,13 @@ int main() {
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
-    
+    printf("\n\n\nlogic process part:- \n\n");
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;){
             if(arr[i]==arr[j]){
                 for(int k=j;k<n-1;k++){
                    arr[k]=arr[k+1]; 
-                    printf("index,value  k:-%d %d ",arr[k],k);
+                    printf("index,value k:-%d %d ",arr[k],k);
                 }
                 n=n-1;
                 printf("\n\narr elem:-%d %d ",j,n);
@@ -43,8 +43,9 @@ int main() {
         }
         
     }
-    printf("%d",n);
-    printf("\n\nremove duplicate element:-\n\n");
+    printf("logic process end");
+    printf("\n\nremove duplicate element from an array:-\n\n");
+    printf("\n\nafter array is:-\n\n");
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
