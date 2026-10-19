@@ -29,3 +29,4 @@ int main() {
         printf("%d ",digit);
     }
     return 0;
+}
