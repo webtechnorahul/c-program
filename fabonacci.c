@@ -10,12 +10,12 @@ int main() {
     int a=0,b=1,n;
     printf("enter number for fabonacci:-");
     scanf("%d",&n);
+    if(n<=0){
+            printf("🤞invalid number ");
+            return 0;
+    }
     int i=0;
     while(i<n){
-        if(n==0){
-            printf("🤞invalid number");
-            break;
-        }
         printf("%d ",a);
        int next=a+b;
         a=b;
