@@ -11,7 +11,7 @@ case 2: input [1 1 1 1] output:- [1]
 #include<stdlib.h>
 #define MAX 100
 int main() {
-    int n,arr[MAX],position,elem;
+    int n,arr[MAX];
     printf("enter limit of data length:-");
     scanf("%d",&n);
 
