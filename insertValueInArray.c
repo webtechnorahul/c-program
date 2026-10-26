@@ -1,7 +1,7 @@
 /**
-case 1: input [4 5 6 3 7 4 8] insert:-3 at position :-5 output:- [4 5 6 3 3 4 8]
-                            insert:-1 at position :-1 output:- [1 5 6 3 7 4 8]
-case 2: input [4 5 8 1 5 4 2] insert:-9 at position :-7 output:- [4 5 6 3 7 4 9]
+case 1: input [4 5 6 3 7 4 8] insert:-3 at position :-5 output:- [4 5 6 3 3 7 4 8]
+                            insert:-1 at position :-1 output:- [1 4 5 6 3 7 4 8]
+case 2: input [4 5 8 1 5 4 2] insert:-9 at position :-7 output:- [4 5 6 3 7 4 2 9]
                             insert:-5 at position :-0 output:- invalid position
                             insert:-10 at position :-10 output:- invalid position
 */
@@ -33,7 +33,7 @@ int main() {
     n=n+1;
     arr[position-1]=elem;
     for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     
 }
